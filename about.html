@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Veloura Pilates Studio</title>
+    <!-- Fonts & CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Reusing page specific styles from header for now, ideally in style.css -->
+    <style>
+        /* Additional specific styles */
+        .page-header {
+            padding: 8rem 0 4rem;
+            background-color: var(--color-warm-beige);
+            text-align: center;
+        }
+        .story-section img {
+            border-radius: var(--radius-md);
+            box-shadow: var(--shadow-soft);
+        }
+        .instructor-card {
+            text-align: center;
+            margin-top: 2rem;
+        }
+        .instructor-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto 1.5rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Nav (Copy from index) -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">VELOURA PILATES</a>
+            <div class="mobile-menu-toggle"><i class="fas fa-bars"></i></div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="classes.html" class="nav-link">Classes</a></li>
+                <li><a href="schedule.html" class="nav-link">Schedule</a></li>
+                <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="schedule.html" class="btn btn-primary">Book Now</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header fade-in-up">
+        <div class="container">
+            <h1>Our Story</h1>
+            <p style="max-width: 600px; margin: 0 auto;">Founded on the belief that movement should be mindful, restorative, and empowering.</p>
+        </div>
+    </header>
+
+    <!-- Studio Story -->
+    <section class="section">
+        <div class="container">
+            <div class="nav-container" style="gap: 4rem; align-items: center;"> <!-- Flex reuse -->
+                <div class="fade-in-up" style="flex: 1;">
+                    <img src="pilates-studio-interior.jpg" alt="Pilates Studio Interior">
+                </div>
+                <div class="fade-in-up" style="flex: 1;">
+                    <h2>More Than Just a Workout</h2>
+                    <p style="margin-bottom: 1rem;">Veloura Pilates Studio was born to create a sanctuary where you can pause, breathe, and reconnect with your body. We move away from the "no pain, no gain" mentality and embrace sustainable, functional movement.</p>
+                    <p>Whether you are recovering from an injury, looking to improve posture, or seeking a challenging athletic flow, our boutique space is designed for you.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Philosophy / Instructor -->
+    <section class="section bg-warm">
+        <div class="container text-center fade-in-up">
+            <h2>Meet Your Instructor</h2>
+            <div class="instructor-card">
+                <img src="instructor.jpg" alt="Instructor Profile" class="instructor-img">
+                <h3>Sophie</h3>
+                <p class="text-muted" style="margin-bottom: 1rem;">Founder & Lead Instructor</p>
+                <p style="max-width: 600px; margin: 0 auto;">"My teaching philosophy is rooted in precision and compassion. I believe that Pilates is for everybody, and my goal is to help you find joy in movement."</p>
+                <div style="margin-top: 1rem;">
+                    <span style="background: white; padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.9rem; margin-right: 0.5rem;">STOTT Certified</span>
+                    <span style="background: white; padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.9rem;">Pre/Post Natal Specialist</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (Copy) -->
+    <footer class="footer" style="background-color: var(--color-charcoal); color: var(--color-ivory); padding: 4rem 0 2rem;">
+        <div class="container footer-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 3rem;">
+            <div class="footer-col">
+                <h4>Veloura Pilates</h4>
+                <p>Mindful movement for a modern life.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Explore</h4>
+                <ul style="list-style: none;">
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="classes.html">Classes</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Visit Us</h4>
+                <p>Islamabad Dha</p>
+            </div>
+        </div>
+        <div class="container copyright" style="text-align: center; margin-top: 3rem; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 1rem;">
+            <p>&copy; 2024 Aaira Pilates Studio.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
