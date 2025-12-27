@@ -4,7 +4,7 @@
 
 ## Overview
 
-Veloura is a modern, responsive website for a boutique Pilates studio located in Islamabad, DHA. The studio is dedicated to providing mindful, restorative, and empowering movement experiences for clients of all levels.
+Veloura is a modern, responsive website for a boutique Pilates studio located in Islamabad, F-6 Markaz. The studio is dedicated to providing mindful, restorative, and empowering movement experiences for clients of all levels.
 
 ## About the Studio
 
@@ -112,7 +112,7 @@ No build process or dependencies are required.
 
 ## Location
 
-**Islamabad, DHA**
+**Islamabad, F-6 Markaz**
 
 ## Contact
 
@@ -125,4 +125,4 @@ This project is owned and maintained by Aaira Sheikh.
 ---
 
 **Website Status**: Active ✓  
-**Last Updated**: 2024
+**Last Updated**: 2025
