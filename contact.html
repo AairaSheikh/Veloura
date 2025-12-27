@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Veloura Pilates Studio</title>
+    <!-- Fonts & CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .page-header {
+            padding: 8rem 0 4rem;
+            background-color: var(--color-warm-beige);
+            text-align: center;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            margin-top: 3rem;
+        }
+
+        .contact-info-block {
+            padding: 2rem;
+            background: white;
+            border-radius: var(--radius-md);
+            box-shadow: var(--shadow-soft);
+        }
+
+        .contact-item {
+            display: flex;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .contact-icon {
+            font-size: 1.5rem;
+            color: var(--color-purple);
+        }
+
+        .contact-form label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+
+        .contact-form input, 
+        .contact-form textarea {
+            width: 100%;
+            padding: 0.8rem;
+            border: 1px solid #ddd;
+            border-radius: var(--radius-sm);
+            margin-bottom: 1.5rem;
+            font-family: var(--font-body);
+        }
+
+        .contact-form input:focus, .contact-form textarea:focus {
+            outline: none;
+            border-color: var(--color-purple);
+        }
+
+        .map-container {
+            height: 400px;
+            background-color: #eee;
+            margin-top: 4rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #888;
+        }
+
+        @media (max-width: 768px) {
+            .contact-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">VELOURA PILATES</a>
+            <div class="mobile-menu-toggle"><i class="fas fa-bars"></i></div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="classes.html" class="nav-link">Classes</a></li>
+                <li><a href="schedule.html" class="nav-link">Schedule</a></li>
+                <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="schedule.html" class="btn btn-primary">Book Now</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="page-header fade-in-up">
+        <div class="container">
+            <h1>Get In Touch</h1>
+            <p>We'd love to hear from you.</p>
+        </div>
+    </header>
+
+    <section class="section">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Contact Info -->
+                <div class="contact-info fade-in-up">
+                    <h2>Visit Our Studio</h2>
+                    <p style="margin-bottom: 2rem;">Drop by for a class or say hello. We are located in the heart of the wellness district.</p>
+                    
+                    <div class="contact-info-block">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt contact-icon"></i>
+                            <div>
+                                <h4>Address</h4>
+                                <p>Islamabad Dha</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope contact-icon"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>veloura@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone contact-icon"></i>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>03228668388</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form fade-in-up" style="transition-delay: 0.2s;">
+                    <h2>Send a Message</h2>
+                    <form>
+                        <label>Name</label>
+                        <input type="text" placeholder="Your Name">
+                        
+                        <label>Email</label>
+                        <input type="email" placeholder="Your Email">
+                        
+                        <label>Message</label>
+                        <textarea rows="5" placeholder="How can we help you?"></textarea>
+                        
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Map Placeholder -->
+        <div class="map-container fade-in-up" style="height: 450px; padding: 0; background: none;">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d106296.65757106888!2d73.06941673859664!3d33.53503460835008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38df935749455555%3A0x2863118b62828622!2sDHA%20Islamabad%20-%20Rawalpindi!5e0!3m2!1sen!2s!4v1715694855000!5m2!1sen!2s" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+    <!-- Footer Reuse -->
+    <footer class="footer" style="background-color: var(--color-charcoal); color: var(--color-ivory); padding: 4rem 0 2rem;">
+        <div class="container footer-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 3rem;">
+            <div class="footer-col">
+                <h4>Aaira Pilates</h4>
+                <p>Mindful movement for a modern life.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Explore</h4>
+                <ul style="list-style: none;">
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="classes.html">Classes</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container copyright" style="text-align: center; margin-top: 3rem; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 1rem;">
+            <p>&copy; 2024 Aaira Pilates Studio.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
