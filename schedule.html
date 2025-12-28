@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule | Veloura Pilates Studio</title>
+    <!-- Fonts & CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .page-header {
+            padding: 8rem 0 4rem;
+            background-color: var(--color-warm-beige);
+            text-align: center;
+        }
+
+        .booking-widget {
+            background: white;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-soft);
+            overflow: hidden;
+            max-width: 900px;
+            margin: -2rem auto 0;
+            position: relative;
+            z-index: 10;
+        }
+
+        .calendar-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem 2rem;
+            background-color: var(--color-charcoal);
+            color: white;
+        }
+
+        .date-nav {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .date-nav button {
+            background: none;
+            border: none;
+            color: white;
+            cursor: pointer;
+            font-size: 1.2rem;
+        }
+
+        .calendar-body {
+            padding: 2rem;
+        }
+
+        .session-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem 0;
+            border-bottom: 1px solid #eee;
+            transition: background-color 0.2s;
+        }
+
+        .session-row:hover {
+            background-color: #fcfcfc;
+        }
+
+        .session-time {
+            width: 15%;
+            font-weight: 700;
+            color: var(--color-charcoal);
+        }
+
+        .session-info {
+            flex: 1;
+        }
+
+        .session-info h4 {
+            margin-bottom: 0.2rem;
+            font-size: 1.1rem;
+        }
+        
+        .session-meta {
+            font-size: 0.9rem;
+            color: #777;
+        }
+
+        .session-action {
+            width: 20%;
+            text-align: right;
+        }
+
+        @media (max-width: 768px) {
+            .session-row {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 1rem;
+            }
+            .session-time, .session-action {
+                width: 100%;
+                text-align: left;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">VELOURA PILATES</a>
+            <div class="mobile-menu-toggle"><i class="fas fa-bars"></i></div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="classes.html" class="nav-link">Classes</a></li>
+                <li><a href="schedule.html" class="nav-link">Schedule</a></li>
+                <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="schedule.html" class="btn btn-primary">Book Now</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="page-header fade-in-up">
+        <div class="container">
+            <h1>Class Schedule</h1>
+            <p>Reserve your spot on the mat.</p>
+        </div>
+    </header>
+
+    <section class="section" style="padding-top: 0;">
+        <div class="container">
+            <div class="booking-widget fade-in-up">
+                <div class="calendar-header">
+                    <div class="date-nav">
+                        <button><i class="fas fa-chevron-left"></i></button>
+                        <span style="font-weight: 600;">Today, Oct 24</span>
+                        <button><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                    <div>
+                        <select style="padding: 0.5rem; border-radius: 4px;">
+                            <option>All Classes</option>
+                            <option>Reformer</option>
+                            <option>Mat</option>
+                            <option>Online</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="calendar-body">
+                    <!-- Session 1 -->
+                    <div class="session-row">
+                        <div class="session-time">07:00 AM</div>
+                        <div class="session-info">
+                            <h4>Sunrise Reformer Flow</h4>
+                            <div class="session-meta">
+                                <span><i class="fas fa-user"></i> Sophie</span>
+                                <span style="margin-left: 1rem;"><i class="fas fa-map-marker-alt"></i> Studio A</span>
+                            </div>
+                        </div>
+                        <div class="session-action">
+                            <button class="btn btn-secondary" style="font-size: 0.8rem; padding: 0.5rem 1.5rem;">Book</button>
+                        </div>
+                    </div>
+
+                    <!-- Session 2 -->
+                    <div class="session-row">
+                        <div class="session-time">09:30 AM</div>
+                        <div class="session-info">
+                            <h4>Mat Sculpt (Online)</h4>
+                            <div class="session-meta">
+                                <span><i class="fas fa-user"></i> Sophie</span>
+                                <span style="margin-left: 1rem;"><i class="fas fa-video"></i> Zoom</span>
+                            </div>
+                        </div>
+                        <div class="session-action">
+                            <button class="btn btn-secondary" style="font-size: 0.8rem; padding: 0.5rem 1.5rem;">Book</button>
+                        </div>
+                    </div>
+
+                    <!-- Session 3 -->
+                    <div class="session-row">
+                        <div class="session-time">05:30 PM</div>
+                        <div class="session-info">
+                            <h4>Restorative Pilates</h4>
+                            <div class="session-meta">
+                                <span><i class="fas fa-user"></i> Sarah</span>
+                                <span style="margin-left: 1rem;"><i class="fas fa-map-marker-alt"></i> Studio B</span>
+                            </div>
+                        </div>
+                        <div class="session-action">
+                            <button class="btn btn-secondary" style="font-size: 0.8rem; padding: 0.5rem 1.5rem;">Full</button>
+                        </div>
+                    </div>
+
+                    <!-- Session 4 -->
+                    <div class="session-row">
+                        <div class="session-time">06:45 PM</div>
+                        <div class="session-info">
+                            <h4>Power Reformer</h4>
+                            <div class="session-meta">
+                                <span><i class="fas fa-user"></i> Sophie</span>
+                                <span style="margin-left: 1rem;"><i class="fas fa-map-marker-alt"></i> Studio A</span>
+                            </div>
+                        </div>
+                        <div class="session-action">
+                            <button class="btn btn-secondary" style="font-size: 0.8rem; padding: 0.5rem 1.5rem;">Book</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center" style="margin-top: 3rem;">
+                <p>Have questions about bookings?</p>
+                <a href="contact.html" style="color: var(--color-purple); font-weight: 600;">Contact Support <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Reuse -->
+    <footer class="footer" style="background-color: var(--color-charcoal); color: var(--color-ivory); padding: 4rem 0 2rem;">
+        <div class="container footer-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 3rem;">
+            <div class="footer-col">
+                <h4>Veloura Pilates</h4>
+                <p>Mindful movement for a modern life.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Explore</h4>
+                <ul style="list-style: none;">
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="classes.html">Classes</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container copyright" style="text-align: center; margin-top: 3rem; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 1rem;">
+            <p>&copy; 2024 Aaira Pilates Studio.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

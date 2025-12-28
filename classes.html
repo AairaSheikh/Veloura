@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classes | Veloura Pilates Studio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .page-header {
+            padding: 8rem 0 4rem;
+            background-color: var(--color-soft-sand);
+            text-align: center;
+        }
+        .filters {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 3rem;
+            flex-wrap: wrap;
+        }
+        .filter-btn {
+            background: transparent;
+            border: 1px solid var(--color-charcoal);
+            padding: 0.5rem 1.5rem;
+            border-radius: var(--radius-full);
+            cursor: pointer;
+            font-family: var(--font-body);
+            transition: all 0.3s ease;
+        }
+        .filter-btn.active, .filter-btn:hover {
+            background: var(--color-charcoal);
+            color: white;
+        }
+        .class-list {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+        .class-item {
+            display: flex;
+            background: white;
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            box-shadow: var(--shadow-soft);
+            transition: transform 0.3s ease;
+        }
+        .class-item:hover { transform: translateY(-3px); }
+        .class-img {
+            width: 300px;
+            object-fit: cover;
+            background-color: var(--color-warm-beige);
+        }
+        .class-info {
+            padding: 2rem;
+            flex: 1;
+        }
+        .class-meta {
+            display: flex;
+            gap: 1.5rem;
+            color: #666;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+        .class-meta i { margin-right: 0.5rem; color: var(--color-purple); }
+        
+        @media (max-width: 768px) {
+            .class-item { flex-direction: column; }
+            .class-img { width: 100%; height: 200px; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">VELOURA PILATES</a>
+            <div class="mobile-menu-toggle"><i class="fas fa-bars"></i></div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="classes.html" class="nav-link">Classes</a></li>
+                <li><a href="schedule.html" class="nav-link">Schedule</a></li>
+                <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="schedule.html" class="btn btn-primary">Book Now</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="page-header fade-in-up">
+        <div class="container">
+            <h1>Our Classes</h1>
+            <p>Find the perfect flow for your body and schedule.</p>
+        </div>
+    </header>
+
+    <section class="section">
+        <div class="container">
+            <!-- Simple JS Filter Placeholder -->
+            <div class="filters fade-in-up">
+                <button class="filter-btn active">All</button>
+                <button class="filter-btn">In-Studio</button>
+                <button class="filter-btn">Online</button>
+                <button class="filter-btn">Private</button>
+            </div>
+
+            <div class="class-list">
+                <!-- Class 1 -->
+                <div class="class-item fade-in-up">
+                    <img src="reformer.jpg" alt="Reformer Pilates" class="class-img">
+                    <div class="class-info">
+                        <h3>Reformer Flow</h3>
+                        <div class="class-meta">
+                            <span><i class="fas fa-signal"></i> All Levels</span>
+                            <span><i class="fas fa-clock"></i> 50 min</span>
+                        </div>
+                        <p style="margin-bottom: 1.5rem;">A dynamic full-body workout using the Reformer to lengthen, strengthen, and tone. We focus on control, precision, and fluid transitions.</p>
+                        <a href="schedule.html" class="btn btn-primary">Book Class</a>
+                    </div>
+                </div>
+
+                <!-- Class 2 -->
+                <div class="class-item fade-in-up">
+                    <img src="mat-sculpt.jpg" alt="Mat Pilates" class="class-img">
+                    <div class="class-info">
+                        <h3>Mat Sculpt</h3>
+                        <div class="class-meta">
+                            <span><i class="fas fa-fire"></i> Intermediate</span>
+                            <span><i class="fas fa-clock"></i> 45 min</span>
+                        </div>
+                        <p style="margin-bottom: 1.5rem;">A high-energy mat class using props like balls, bands, and circles. Expect to feel the burn as we target deep core muscles and glutes.</p>
+                        <a href="schedule.html" class="btn btn-primary">Book Class</a>
+                    </div>
+                </div>
+
+                <!-- Class 3 -->
+                <div class="class-item fade-in-up">
+                    <img src="Private Sessions.jpg" alt="Private Session" class="class-img">
+                    <div class="class-info">
+                        <h3>Private Session</h3>
+                        <div class="class-meta">
+                            <span><i class="fas fa-user"></i> 1-on-1</span>
+                            <span><i class="fas fa-clock"></i> 55 min</span>
+                        </div>
+                        <p style="margin-bottom: 1.5rem;">The ultimate personalized experience. Perfect for rehabilitation, pre/post-natal care, or mastering advanced repertoire.</p>
+                        <a href="contact.html" class="btn btn-secondary">Inquire Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Reuse -->
+    <footer class="footer" style="background-color: var(--color-charcoal); color: var(--color-ivory); padding: 4rem 0 2rem;">
+        <div class="container footer-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 3rem;">
+            <div class="footer-col">
+                <h4>Aaira Pilates</h4>
+                <p>Mindful movement for a modern life.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Explore</h4>
+                <ul style="list-style: none;">
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="classes.html">Classes</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container copyright" style="text-align: center; margin-top: 3rem; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 1rem;">
+            <p>&copy; 2024 Aaira Pilates Studio.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

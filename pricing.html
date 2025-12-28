@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing | Veloura Pilates Studio</title>
+    <!-- Fonts & CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .page-header {
+            padding: 8rem 0 4rem;
+            background-color: var(--color-soft-sand);
+            text-align: center;
+        }
+
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .pricing-card {
+            background: white;
+            padding: 3rem 2rem;
+            border-radius: var(--radius-lg);
+            text-align: center;
+            box-shadow: var(--shadow-soft);
+            transition: transform 0.3s ease;
+            position: relative;
+            border: 1px solid transparent;
+        }
+
+        .pricing-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .pricing-card.featured {
+            border: 2px solid var(--color-purple);
+            background-color: #fafbf9;
+        }
+
+        .pricing-tag {
+            background-color: var(--color-purple);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-weight: 700;
+        }
+
+        .price {
+            font-size: 3rem;
+            font-family: var(--font-heading);
+            color: var(--color-charcoal);
+            margin: 1.5rem 0;
+        }
+
+        .price span {
+            font-size: 1rem;
+            color: #777;
+            font-family: var(--font-body);
+        }
+
+        .benefits-list {
+            margin: 2rem 0;
+            text-align: left;
+        }
+
+        .benefits-list li {
+            margin-bottom: 0.8rem;
+            display: flex;
+            align-items: center;
+            color: #555;
+        }
+
+        .benefits-list li i {
+            color: var(--color-purple);
+            margin-right: 0.8rem;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">VELOURA PILATES</a>
+            <div class="mobile-menu-toggle"><i class="fas fa-bars"></i></div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="classes.html" class="nav-link">Classes</a></li>
+                <li><a href="schedule.html" class="nav-link">Schedule</a></li>
+                <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="schedule.html" class="btn btn-primary">Book Now</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="page-header fade-in-up">
+        <div class="container">
+            <h1>Invest In Yourself</h1>
+            <p>Flexible options for every lifestyle.</p>
+        </div>
+    </header>
+
+    <section class="section">
+        <div class="container">
+            <div class="pricing-grid">
+                <!-- Drop-in -->
+                <div class="pricing-card fade-in-up">
+                    <h3>Single Class</h3>
+                    <div class="price">$35 <span>/ class</span></div>
+                    <p>Perfect for visitors or trying something new.</p>
+                    <ul class="benefits-list">
+                        <li><i class="fas fa-check"></i> 55-min Reformer or Mat</li>
+                        <li><i class="fas fa-check"></i> Towel service included</li>
+                        <li><i class="fas fa-check"></i> 14-day expiry</li>
+                    </ul>
+                    <a href="schedule.html" class="btn btn-secondary">Get Single Pass</a>
+                </div>
+
+                <!-- Membership (Featured) -->
+                <div class="pricing-card featured fade-in-up" style="transition-delay: 0.2s;">
+                    <div class="pricing-tag">BEST VALUE</div>
+                    <h3>Monthly Unlimted</h3>
+                    <div class="price">$280 <span>/ month</span></div>
+                    <p>Commit to consistency and see real change.</p>
+                    <ul class="benefits-list">
+                        <li><i class="fas fa-check"></i> Unlimited classes</li>
+                        <li><i class="fas fa-check"></i> Priority booking window</li>
+                        <li><i class="fas fa-check"></i> Free online access</li>
+                        <li><i class="fas fa-check"></i> 10% off retail</li>
+                    </ul>
+                    <a href="schedule.html" class="btn btn-primary">Join Membership</a>
+                </div>
+
+                <!-- 10 Pack -->
+                <div class="pricing-card fade-in-up" style="transition-delay: 0.4s;">
+                    <h3>10 Class Pack</h3>
+                    <div class="price">$320 <span>/ pack</span></div>
+                    <p>Flexibility to practice at your own pace.</p>
+                    <ul class="benefits-list">
+                        <li><i class="fas fa-check"></i> $32 per class</li>
+                        <li><i class="fas fa-check"></i> Good for 6 months</li>
+                        <li><i class="fas fa-check"></i> Shareable with a friend</li>
+                    </ul>
+                    <a href="schedule.html" class="btn btn-secondary">Buy Pack</a>
+                </div>
+            </div>
+
+            <div class="text-center" style="margin-top: 4rem;">
+                <h3>New Client Special</h3>
+                <p>3 Classes for $49 (Intros Only)</p>
+                <a href="schedule.html" class="btn btn-primary" style="margin-top: 1rem;">Claim Offer</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Reuse -->
+    <footer class="footer" style="background-color: var(--color-charcoal); color: var(--color-ivory); padding: 4rem 0 2rem;">
+        <div class="container footer-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 3rem;">
+            <div class="footer-col">
+                <h4>Aaira Pilates</h4>
+                <p>Mindful movement for a modern life.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Explore</h4>
+                <ul style="list-style: none;">
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="classes.html">Classes</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container copyright" style="text-align: center; margin-top: 3rem; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 1rem;">
+            <p>&copy; 2024 Aaira Pilates Studio.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
